@@ -1,0 +1,79 @@
+//Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. 
+//Написать функцию, заменяющую в принятом массиве 0 на 1, 1 на 0 (** без применения if-else, switch, () ? :);
+#include <iostream>
+ using namespace std;
+void massive(int work[], const int size);
+void arr(int work[], const int size);
+void newmass(int work[], const int size);
+
+
+int main(int argc, char** argv){
+    const int size = 10;
+int work [size];
+massive(work, size);
+arr(work, size);
+newmass(work, size);
+}
+void massive(int work[], const int size){
+    for(int i = 0; i < size; i++) {
+    work[0] = 1;
+    work[1] = 1;
+    work[2] = 0;
+    work[3] = 0;
+    work[4] = 1;
+    work[5] = 0;
+    work[6] = 1;
+    work[7] = 1;
+    work[8] = 0;
+    work[9] = 0;
+}
+}
+void arr(int work[], const int size){
+for (int i = 0; i < 10; i++){
+cout << work[i] << endl;
+}
+}
+void newmass(int work[], const int size){
+     for(int i = 0; i < size; i++) {
+    work[0] = 1;
+    work[1] = 1;
+    work[2] = 0;
+    work[3] = 0;
+    work[4] = 1;
+    work[5] = 0;
+    work[6] = 1;
+    work[7] = 1;
+    work[8] = 0;
+    work[9] = 0;
+}
+for (int i = 0; i < 10; i++){
+work[i] = work[i] == 1 ? 0 : 1;
+cout << work[i] << endl;
+}
+}
+
+
+/Задать пустой целочисленный массив размером 8. Написать функцию, которая с помощью цикла заполнит его значениями 1 4 7 10 13 16 19 22;
+#include <iostream>     
+using namespace std;
+
+void massive(int arr[], const int size){
+    for(int i = 0; i < size; i++){
+    
+    }
+}
+void newmass(int arr[], const int size){
+    int j = 1;
+    for(int i = 1; i < size;i++, j = j + 3){
+        arr[i] = j;
+        cout << arr[i] << endl;
+    }
+}
+
+
+int main(int argc, char** argv){
+const int size = 8;
+int arr[size];
+massive(arr, size);
+newmass(arr, size);
+}
